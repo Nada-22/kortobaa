@@ -1,1 +1,58 @@
-<p>header works!</p>
+<div class="container-fluid p-0">
+    <div class="row my-2 mx-4">
+        <form class="d-flex">
+            <button class="btn btn-sm bg-k mx-2 w-25">
+
+                <img src="../../../../assets/images/shopping_cart-24px.png" alt="" srcset="">
+                <span class="px-2 d-none d-sm-inline">سلة التسوق</span>
+
+            </button>
+            <button class="btn btn-sm bg-k mx-2">
+
+                <img src="../../../../assets/images/person-24px.png" alt="" srcset="">
+            </button>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <img src="../../../../assets/images/Path 224.png" alt="" srcset="" class="image-fluid d-none d-sm-block">
+        </form>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-k p-md-0 p-2">
+
+        <img src="../../../../assets/images/Path 224.png" alt="" srcset="" class="image-fluid d-block d-sm-none">
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4 justifiy-content-end">
+                <li class="nav-item mx-2 ">
+                    <a class="nav-link color-k" href="#" tabindex="-1" aria-disabled="true"> من نحن</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link color-k" href="#" tabindex="-1" aria-disabled="true"> تواصل معنا</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link color-k" href="#" tabindex="-1" aria-disabled="true">قائمة الامنيات</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active color-k" aria-current="page" href="#">الرئسية</a>
+                </li>
+                
+                <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-end">
+					<a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button"> 
+                        الاقسام </a>
+					<div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+						<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+						<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+						<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+					</div>
+				</li>
+               
+            </ul>
+
+        </div>
+
+    </nav>
+</div>

@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { Routes, RouterModule } from '@angular/router';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [];
 
@@ -15,7 +16,13 @@ const routes: Routes = [];
     MainComponent
   ],
   imports: [
-    CommonModule,RouterModule.forChild(routes)
+    CommonModule,RouterModule.forChild(routes),NgbDropdownModule
+  ],
+  exports:[
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
+    
   ]
 })
 export class LayoutModule { }
