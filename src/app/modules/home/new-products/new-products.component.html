@@ -1,0 +1,57 @@
+<div class=" m-4">
+    <div class="text-center d-flex">
+        <button class="btn btn-sm btn-outline-dark w-25 me-2">show all </button>
+        <hr style="width: -webkit-fill-available;">
+        
+        <small class="w-25 fw-bold text-muted">وصل حديثا</small>
+    </div>
+
+    <div class="row" dir="rtl">
+    
+        <div class="col-md-3 col-6 my-2" *ngFor="let product of products">
+        
+            <div class="card border-0 position-relative">
+                <div class="card-body text-center">
+                    <img [src]="product.image" class="img-fluid object-fit-contain" alt="">
+                    <div class="text-end">
+                    <p class="" style="font-size: 12px;">{{product.name|slice:0:20}}...</p>
+                    <div>
+    
+                        <img src="../../../../assets/images/Star.png"  alt="" srcset="">
+                        <img src="../../../../assets/images/Star.png" alt="" srcset="">
+                        <img src="../../../../assets/images/Star.png" alt="" srcset="">
+                        <img src="../../../../assets/images/Star.png" alt="" srcset="">
+                        <img src="../../../../assets/images/Star.png" alt="" srcset="">
+                    </div>
+                    <span class="color-k text-decoration-line-through fs-6">{{product.oldPrice|currency}}</span>
+                    <br>
+                    <small >{{product.price|currency}}</small>
+                    <div class="position-absolute compare translate-middle">
+                        <img src="../../../../assets/images/compare_arrows_black_24dp-1.png" alt="">
+                    </div>
+                    <div class="position-absolute options translate-middle ">
+                        <small *ngIf="product.option=='show'" class="badge rounded-pill bg-success">عرض</small>
+                        <small *ngIf="product.option=='new'" class="badge rounded-pill main-bg">جديد</small>
+                    </div>
+                    </div>
+                    
+                    <div class="d-md-flex align-items-center justify-content-between d-block">
+    
+                        <button class="btn btn-sm main-bg mt-2 text-white add_cart"> 
+                            <img src="../../../../assets/images/add_shopping_cart-black-18dp.png"
+                             class="image-fluid mx-lg-2" width="15" alt="" srcset="">
+                            <small class="px-lg-2">اضف الي العربة</small>
+                            </button>
+                            <div>
+                                <img src="../../../../assets/images/share.png" width="15" class="mx-2" alt="">
+                                <img src="../../../../assets/images/favorite_border-24px.png" width="15" class="mx-2" alt="">
+                            </div>
+                    </div>
+    
+                </div>
+                
+               
+            </div>
+        </div> 
+    </div>
+</div>

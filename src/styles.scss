@@ -7,10 +7,15 @@ body{
 
     --k-bg:#efeef8;
     --k-color:#302ca2;
+    --k-main-bg:#23104e;
     .bg-k{
         background-color: var(--k-bg);
     }
     .color-k{
         color:var(--k-color) ;
+    }
+    .main-bg{
+
+        background-color: var(--k-main-bg);
     }
 }

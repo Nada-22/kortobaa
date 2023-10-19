@@ -13,3 +13,11 @@
 .nav-link{
     padding: 14px;
 }
+.dropdown-menu.show{
+    border-radius: 0 !important;
+}
+.dropdown-item:active ,.dropdown-item:focus,.dropdown-item:hover {
+    background-color:#e0dff1 !important;
+
+
+}
