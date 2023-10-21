@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class RightSideComponent implements OnInit {
 
   products=[
-    {image:'assets/images/pic-6.png',name:'تيشرت كم طول 52 سم',rate:3,option:'new',price:140,oldPrice:200},
-    {image:'assets/images/pic-4.png',name:'تيشرت كم طول 52 سم',rate:4,option:'show',price:140,oldPrice:200},
-    {image:'assets/images/pic-5.png',name:'تيشرت كم طول 52 سم',rate:2,option:'',price:240,oldPrice:300},
+    {image:'assets/images/pic-6.png',name:' تيشرت كم طويل 52 سم ارثر وبر نسائي',rate:3,option:'new',price:140,oldPrice:200},
+    {image:'assets/images/pic-4.png',name:' تيشرت كم طويل 52 سم ارثر وبر نسائي',rate:4,option:'show',price:140,oldPrice:200},
+    {image:'assets/images/pic-5.png',name:' تيشرت كم طويل 52 سم ارثر وبر نسائي',rate:2,option:'',price:240,oldPrice:300},
   ]
   constructor() { }
 

@@ -7,6 +7,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { NgbCarouselModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NewProductsComponent } from './new-products/new-products.component';
 import { RightSideComponent } from './right-side/right-side.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RightSideComponent } from './right-side/right-side.component';
     CommonModule,
     HomeRoutingModule,
     NgbCarouselModule,
-    NgbTooltipModule
+    NgbTooltipModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
