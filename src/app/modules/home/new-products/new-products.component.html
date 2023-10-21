@@ -1,9 +1,9 @@
-<div class=" m-4">
-    <div class="text-center d-flex">
-        <button class="btn btn-sm btn-outline-dark w-25 me-2">show all </button>
-        <hr style="width: -webkit-fill-available;">
+<div class="ms-lg-5 my-4">
+    <div class="text-center d-flex justify-content-between mb-2">
+        <p class="fw-bold text-muted">وصل حديثا</p>
+        <hr class="w-75 d-sm-block d-none">
+        <button class="btn btn-sm k-btn-outline-primary px-4">show all </button>
         
-        <small class="w-25 fw-bold text-muted">وصل حديثا</small>
     </div>
 
     <div class="row" dir="rtl">
@@ -25,10 +25,10 @@
                         
                        
                     </div>
-                    <span class="color-k text-decoration-line-through fs-6">{{product.oldPrice|currency}}</span>
+                    <span class="k-sec-color text-decoration-line-through fs-6">{{product.oldPrice|currency}}</span>
                     <br>
-                    <small >{{product.price|currency}}</small>
-                    <div class="position-absolute compare translate-middle">
+                    <small>{{product.price|currency}}</small>
+                    <div class="position-absolute compare translate-middle cursor-pointer" ngbTooltip="اضف للمقارنة">
                         <img src="../../../../assets/images/compare_arrows_black_24dp-1.png" alt="">
                     </div>
                     <div class="position-absolute options translate-middle ">
@@ -39,7 +39,7 @@
                     
                     <div class="d-md-flex align-items-center justify-content-between d-block">
     
-                        <button class="btn btn-sm main-bg mt-2 text-white add_cart"> 
+                        <button class="btn btn-sm k-btn-primary mt-2 text-white add_cart"> 
                             <img src="../../../../assets/images/add_shopping_cart-black-18dp.png"
                              class="image-fluid mx-lg-2" width="15" alt="" srcset="">
                             <small class="px-lg-2">اضف الي العربة</small>

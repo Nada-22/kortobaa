@@ -5,17 +5,40 @@
 
 body{
 
-    --k-bg:#efeef8;
-    --k-color:#302ca2;
+    --k-bg-light:#efeef8;
+    --k-primary:#302ca2;
     --k-main-bg:#23104e;
-    .bg-k{
-        background-color: var(--k-bg);
+    --k-gray:#b7aeca;
+    
+    .k-bg-light{
+        background-color: var(--k-bg-light);
     }
-    .color-k{
-        color:var(--k-color) ;
+    .k-color{
+        color:var(--k-primary) ;
+    }
+    .k-sec-color{
+        color:var(--k-gray) ;
     }
     .main-bg{
-
         background-color: var(--k-main-bg);
     }
+    .sec-bg{
+
+        background-color: var(--k-gray);
+    }
+    .k-btn-outline-primary{
+        border: 2px solid var(--k-primary);
+        color: var(--k-primary);
+    }
+    .k-btn-outline-primary:hover{
+        background-color: var(--k-primary);
+        color: white;
+    }
+    .k-btn-primary{
+        background-color: var(--k-primary);
+    }
+    .cursor-pointer{
+        cursor: pointer;
+    }
+ 
 }

@@ -1,22 +1,22 @@
 <div class="container-fluid p-0">
     <div class="row my-2 mx-4">
         <form class="d-flex">
-            <button class="btn btn-sm bg-k mx-2 w-25">
+            <img src="../../../../assets/images/Path 224.png" alt="" srcset="" class="image-fluid d-none d-sm-block">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-sm k-bg-light mx-2">
+
+                <img src="../../../../assets/images/person-24px.png" alt="" srcset="">
+            </button>
+            <button class="btn btn-sm k-bg-light mx-2 w-25">
 
                 <img src="../../../../assets/images/shopping_cart-24px.png" alt="" srcset="">
                 <span class="px-2 d-none d-sm-inline">سلة التسوق</span>
 
             </button>
-            <button class="btn btn-sm bg-k mx-2">
-
-                <img src="../../../../assets/images/person-24px.png" alt="" srcset="">
-            </button>
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <img src="../../../../assets/images/Path 224.png" alt="" srcset="" class="image-fluid d-none d-sm-block">
         </form>
 
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-k p-md-0 p-2">
+    <nav class="navbar navbar-expand-lg navbar-light k-bg-light p-md-0 p-2">
 
         <img src="../../../../assets/images/Path 224.png" alt="" srcset="" class="image-fluid d-block d-sm-none">
 
@@ -26,29 +26,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4 justifiy-content-end">
-                <li class="nav-item px-2 ">
-                    <a class="nav-link color-k" href="#" tabindex="-1" aria-disabled="true"> من نحن</a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-md-4 justifiy-content-end pe-0">
+                <li class="nav-item mx-1" ngbDropdown display="dynamic" placement="bottom-end">
+                    <a class="nav-link k-color px-3" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button"> 
+                        الاقسام </a>
+                    <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+                        <a ngbDropdownItem (click)="$event.preventDefault()">Action</a>
+                        <a ngbDropdownItem (click)="$event.preventDefault()">Another action</a>
+                        <a ngbDropdownItem (click)="$event.preventDefault()">Something else here</a>
+                    </div>
                 </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link color-k" href="#" tabindex="-1" aria-disabled="true"> تواصل معنا</a>
+                <li class="nav-item cursor-pointer mx-1" routerLink="/home">
+                    <a class="nav-link active k-color px-3" aria-current="page">الرئسية</a>
                 </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link color-k" href="#" tabindex="-1" aria-disabled="true">قائمة الامنيات</a>
+                <li class="nav-item cursor-pointer mx-1" routerLink="/home">
+                <a class="nav-link k-color px-3" tabindex="-1" aria-disabled="true">قائمة الامنيات</a>
                 </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link active color-k" aria-current="page" href="#">الرئسية</a>
+                <li class="nav-item cursor-pointer mx-1" routerLink="/home">
+                <a class="nav-link k-color px-3" tabindex="-1" aria-disabled="true"> تواصل معنا</a>
+                </li>
+                <li class="nav-item px-2 cursor-pointer mx-1" routerLink="/home">
+                    <a class="nav-link k-color px-3" tabindex="-1" aria-disabled="true"> من نحن</a>
                 </li>
                 
-                <li class="nav-item px-3" ngbDropdown display="dynamic" placement="bottom-end">
-					<a class="nav-link color-k" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button"> 
-                        الاقسام </a>
-					<div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
-						<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
-						<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
-						<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
-					</div>
-				</li>
                
             </ul>
 
