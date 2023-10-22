@@ -2,7 +2,7 @@
 
     <div class="mb-4">
 
-        <small class="mx-2 fw-bold text-muted"> منتجات تصفحتها مؤخرا</small>
+        <small class="mx-2 fw-bold text-color"> منتجات تصفحتها مؤخرا</small>
     </div>
 
     <div class="row">
@@ -19,17 +19,17 @@
                         <div class="position-absolute top-0 start-0 translate-middle ">
                             <small *ngIf="product.option=='show'" style="font-size: 9px;"
                                 class="badge rounded-pill bg-success">عرض</small>
-                            <small *ngIf="product.option=='new'" class="badge rounded-pill main-bg"
+                            <small *ngIf="product.option=='new'" class="badge rounded-pill k-sec-bg"
                             style="font-size: 9px;">جديد</small>
                         </div>
                         </div>
                     </div>
                     <div class="col-8">
-                        <small>{{product.name|maxLength:20}}</small>
+                        <small class="text-color">{{product.name|maxLength:20}}</small>
                         <br>
-                        <span class="k-sec-color text-decoration-line-through fs-6">{{product.oldPrice|currency}}</span>
+                        <span class="k-gray text-decoration-line-through fs-6">{{product.oldPrice|currency}}</span>
                         <br>
-                        <small>{{product.price|currency}}</small>
+                        <small class="price-color">{{product.price|currency}}</small>
                         <div class="d-flex align-items-center justify-content-between mt-2">
                             <div class="">
                                 <img src="../../../../assets/images/add_shopping_cart-black-18dp-1.png"

@@ -1,6 +1,6 @@
 <div class="ms-lg-5 my-4">
     <div class="text-center d-flex justify-content-between mb-2">
-        <p class="fw-bold text-muted">وصل حديثا</p>
+        <p class="fw-bold text-color headline1">وصل حديثا</p>
         <hr class="w-75 d-sm-block d-none">
         <button class="btn btn-sm k-btn-outline-primary px-4">show all </button>
         
@@ -14,7 +14,7 @@
                 <div class="card-body text-center">
                     <img [src]="product.image" class="img-fluid object-fit-contain" alt="">
                     <div class="text-end">
-                    <p class="" style="font-size: 12px;">{{product.name|maxLength:30}}</p>
+                    <p class="text-color" style="font-size: 12px;">{{product.name|maxLength:30}}</p>
                     <div dir="ltr">
     
                         <ng-container *ngFor="let item of [1,2,3,4,5];let i=index">
@@ -25,15 +25,15 @@
                         
                        
                     </div>
-                    <span class="k-sec-color text-decoration-line-through fs-6">{{product.oldPrice|currency}}</span>
+                    <span class="k-gray text-decoration-line-through fs-6">{{product.oldPrice|currency}}</span>
                     <br>
-                    <small>{{product.price|currency}}</small>
+                    <small class="price-color">{{product.price|currency}}</small>
                     <div class="position-absolute compare translate-middle cursor-pointer" ngbTooltip="اضف للمقارنة">
                         <img src="../../../../assets/images/compare_arrows_black_24dp-1.png" alt="">
                     </div>
                     <div class="position-absolute options translate-middle ">
                         <small *ngIf="product.option=='show'" class="badge rounded-pill bg-success">عرض</small>
-                        <small *ngIf="product.option=='new'" class="badge rounded-pill main-bg">جديد</small>
+                        <small *ngIf="product.option=='new'" class="badge rounded-pill k-sec-bg">جديد</small>
                     </div>
                     </div>
                     

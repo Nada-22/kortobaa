@@ -5,9 +5,11 @@
 
 body{
 
+    --k-text-color:#032326;
+    --k-sec-color:#23104E;
+
     --k-bg-light:#efeef8;
     --k-primary:#302ca2;
-    --k-main-bg:#23104e;
     --k-gray:#b7aeca;
     
     .k-bg-light{
@@ -16,15 +18,11 @@ body{
     .k-color{
         color:var(--k-primary) ;
     }
-    .k-sec-color{
+    .k-gray{
         color:var(--k-gray) ;
     }
-    .main-bg{
-        background-color: var(--k-main-bg);
-    }
-    .sec-bg{
-
-        background-color: var(--k-gray);
+    .k-sec-bg{
+        background-color: var(--k-sec-color);
     }
     .k-btn-outline-primary{
         border: 2px solid var(--k-primary);
@@ -39,6 +37,13 @@ body{
     }
     .cursor-pointer{
         cursor: pointer;
+    }
+    .text-color{
+        color: var(--k-text-color);
+    }
+
+    .price-color{
+        color: var(--k-sec-color);
     }
  
 }
